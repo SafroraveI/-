@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0077b6">
+<meta name="description" content="سافروا ترافل - عروض فنادق شرم والغردقة ودهب صيف 2026">
+<title>سافروا ترافل | عروض صيف 2026</title>
+<link rel="icon" href="https://cdn.imagetourls.com/uploads/tyImg/Py6Ksy2K.png">
+<link rel="manifest" id="manifestLink">
+<link rel="apple-touch-icon" href="https://cdn.imagetourls.com/uploads/tyImg/Py6Ksy2K.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#0077b6;--primary-dark:#03045e;--secondary:#00b4d8;--accent:#ffb703;--accent-hover:#fb8500;--bg-light:#f8fafc;--card-bg:#fff;--text-dark:#1e293b;--text-muted:#64748b;--shadow:0 20px 40px -15px rgba(0,0,0,.08);--transition:all .4s cubic-bezier(.16,1,.3,1)}
+[data-theme="dark"]{--primary:#00b4d8;--primary-dark:#90e0ef;--secondary:#0077b6;--bg-light:#07090e;--card-bg:#111827;--text-dark:#f8fafc;--text-muted:#94a3b8;--shadow:0 20px 40px -15px rgba(0,0,0,.5)}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif;scroll-behavior:smooth}
+body{background:var(--bg-light);color:var(--text-dark);line-height:1.8;overflow-x:hidden;transition:background .3s,color .3s}
+.scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--primary));z-index:9999;width:0;transition:width .1s}
+#splash-screen{position:fixed;inset:0;background:linear-gradient(135deg,var(--primary-dark),var(--primary));display:flex;flex-direction:column;justify-content:center;align-items:center;z-index:9999;color:#fff;transition:opacity .8s,visibility .8s}
+#splash-screen.fade-out{opacity:0;visibility:hidden}
+.splash-logo{height:90px;border-radius:15px;margin-bottom:20px;background:#fff;padding:5px;animation:pulseLogo 1.5s infinite alternate}
+@keyframes pulseLogo{to{transform:scale(1.08) translateY(-5px)}}
+.splash-title{font-size:2rem;font-weight:900;text-align:center;padding:0 20px}
+.splash-sub{text-align:center;padding:0 20px;opacity:.9}
+.splash-loader{width:50px;height:50px;border:4px solid rgba(255,255,255,.3);border-top-color:var(--accent);border-radius:50%;animation:spin 1s linear infinite;margin-top:15px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.top-bar{background:linear-gradient(90deg,var(--primary-dark),var(--primary));color:#fff;padding:10px 5%;font-size:.9rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.top-bar-info{display:flex;gap:20px;flex-wrap:wrap}
+.top-bar-info i{color:var(--accent);margin-left:5px}
+.controls-bar{display:flex;gap:10px;flex-wrap:wrap}
+.control-btn{background:rgba(255,255,255,.2);border:none;color:#fff;padding:6px 14px;border-radius:20px;cursor:pointer;font-weight:700;font-size:.85rem;transition:var(--transition);display:flex;align-items:center;gap:6px;font-family:'Cairo',sans-serif}
+.control-btn:hover{background:rgba(255,255,255,.4)}
+header{background:var(--card-bg);position:sticky;top:0;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,.05)}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:12px 5%;max-width:1400px;margin:0 auto;gap:15px;flex-wrap:wrap}
+.logo-container{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-container img{height:60px;border-radius:12px;object-fit:contain}
+.logo-text{font-size:1.8rem;font-weight:900;color:var(--primary-dark)}
+[data-theme="dark"] .logo-text{color:var(--primary)}
+.logo-text span{color:var(--secondary)}
+.nav-links{display:flex;list-style:none;gap:25px;align-items:center;flex-wrap:wrap}
+.nav-links a{text-decoration:none;color:var(--text-dark);font-weight:700;font-size:1.05rem;transition:var(--transition)}
+.nav-links a:hover{color:var(--primary)}
+.btn-book-nav{background:linear-gradient(45deg,var(--accent),var(--accent-hover));color:#1e293b!important;padding:10px 22px;border-radius:30px;font-weight:800!important;box-shadow:0 4px 15px rgba(255,183,3,.4)}
+.mobile-menu-btn{display:none;background:none;border:none;font-size:1.5rem;color:var(--text-dark);cursor:pointer;padding:8px}
+.hero{position:relative;background:linear-gradient(rgba(3,4,94,.82),rgba(0,119,182,.72)),url('https://cdn.imagetourls.com/uploads/tyImg/1dFbpXN0I.jpg') center/cover no-repeat;height:80vh;min-height:500px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:0 20px}
+.hero-content{max-width:950px}
+.hero-badge{background:var(--accent);color:#1e293b;padding:8px 24px;border-radius:25px;font-weight:800;display:inline-block;margin-bottom:20px;font-size:1.1rem}
+.hero h1{font-size:3.4rem;font-weight:900;margin-bottom:20px;line-height:1.25;text-shadow:0 5px 15px rgba(0,0,0,.5)}
+.hero p{font-size:1.2rem;margin-bottom:30px;opacity:.95}
+@media(max-width:900px){.hero h1{font-size:2rem}.nav-links{display:none;position:absolute;top:100%;right:0;left:0;background:var(--card-bg);flex-direction:column;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,.1)}.nav-links.open{display:flex}.mobile-menu-btn{display:block}.logo-text{font-size:1.4rem}.logo-container img{height:45px}}
+.weather-section{max-width:1200px;margin:-40px auto 30px;padding:0 20px;position:relative;z-index:100}
+.weather-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.weather-card{background:var(--card-bg);border-radius:18px;padding:18px;box-shadow:var(--shadow);display:flex;align-items:center;gap:14px;border-right:5px solid var(--accent);transition:var(--transition)}
+.weather-card:hover{transform:translateY(-5px)}
+.weather-icon{font-size:2.5rem;line-height:1}
+.weather-city{font-size:.95rem;font-weight:800;color:var(--text-dark);margin-bottom:2px}
+.weather-temp{font-size:1.6rem;font-weight:900;color:var(--primary);line-height:1}
+.weather-desc{font-size:.8rem;color:var(--text-muted);font-weight:600}
+.exclusive-section{background:var(--card-bg);padding:35px 5%;margin:0 auto 40px;max-width:1200px;border-radius:20px;box-shadow:var(--shadow);border-bottom:5px solid var(--accent)}
+.exclusive-title{text-align:center;font-weight:800;color:var(--primary-dark);font-size:1.5rem;margin-bottom:22px}
+[data-theme="dark"] .exclusive-title{color:var(--primary)}
+.exclusive-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.exclusive-card{background:var(--bg-light);border-radius:16px;padding:20px;display:flex;align-items:center;gap:15px;border-right:6px solid var(--primary);transition:var(--transition)}
+.exclusive-card:hover{transform:translateY(-5px)}
+.exclusive-card i{font-size:2.2rem;color:var(--primary)}
+.exclusive-card h3{font-size:1.2rem;margin-bottom:4px}
+.exclusive-card p{font-size:.85rem;color:var(--text-muted)}
+.section-header{text-align:center;margin:50px 0 25px;padding:0 20px}
+.section-header h2{font-size:2.2rem;color:var(--primary-dark);font-weight:900}
+[data-theme="dark"] .section-header h2{color:var(--primary)}
+.search-filter-bar{max-width:1200px;margin:0 auto 30px;padding:0 20px;display:flex;flex-direction:column;gap:15px}
+.search-wrapper{position:relative;max-width:600px;margin:0 auto;width:100%}
+.search-wrapper i{position:absolute;right:18px;top:50%;transform:translateY(-50%);color:var(--text-muted)}
+#searchInput{width:100%;padding:14px 50px 14px 20px;border-radius:30px;border:2px solid rgba(100,116,139,.2);background:var(--card-bg);color:var(--text-dark);font-family:'Cairo',sans-serif;font-size:1rem;transition:var(--transition)}
+#searchInput:focus{outline:none;border-color:var(--primary)}
+.filters-row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.filter-btn{background:var(--card-bg);border:2px solid rgba(100,116,139,.2);color:var(--text-dark);padding:8px 18px;border-radius:25px;font-weight:700;font-size:.9rem;cursor:pointer;transition:var(--transition);font-family:'Cairo',sans-serif}
+.filter-btn:hover,.filter-btn.active{background:var(--primary);border-color:var(--primary);color:#fff}
+.destinations-tabs{display:flex;justify-content:center;gap:12px;margin:30px 20px;flex-wrap:wrap}
+.tab-btn{background:var(--card-bg);border:2px solid var(--primary);color:var(--primary);padding:12px 28px;border-radius:30px;font-weight:800;font-size:1.05rem;cursor:pointer;transition:var(--transition);font-family:'Cairo',sans-serif}
+.tab-btn.active,.tab-btn:hover{background:var(--primary);color:#fff}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:30px;max-width:1350px;margin:0 auto;padding:0 20px}
+.hotel-card{background:var(--card-bg);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;position:relative;transition:all .4s}
+.hotel-card:hover{transform:translateY(-8px);box-shadow:0 30px 60px rgba(0,0,0,.15)}
+.card-badge{position:absolute;top:15px;right:15px;padding:6px 16px;border-radius:25px;color:#fff;font-size:.85rem;font-weight:800;z-index:10}
+.badge-exclusive{background:#023e8a}.badge-bestseller{background:#e63946}.badge-economic{background:#38b000}.badge-royal{background:linear-gradient(45deg,#ffb703,#fb8500);color:#000}.badge-featured{background:var(--primary)}
+.fav-btn{position:absolute;top:15px;left:15px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.95);border:none;cursor:pointer;z-index:10;font-size:1.1rem;color:#e63946;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.15);transition:var(--transition)}
+.fav-btn:hover{transform:scale(1.15)}
+.fav-btn.active{background:#e63946;color:#fff}
+.card-slider{position:relative;height:250px;background:#0b0f19;overflow:hidden}
+.img-skeleton{position:absolute;inset:0;background:linear-gradient(90deg,#1e293b 25%,#334155 50%,#1e293b 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;z-index:1}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.slide-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s;z-index:2}
+.slide-img.active{opacity:1}
+.hotel-card:hover .slide-img.active{transform:scale(1.05)}
+.no-image{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#1e293b,#0f172a);color:#64748b;font-size:3rem}
+.no-image span{font-size:1rem;font-weight:700}
+.slider-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.6);color:#fff;border:none;width:36px;height:36px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:5;transition:var(--transition)}
+.slider-btn:hover{background:var(--primary)}
+.prev-btn{right:10px}.next-btn{left:10px}
+.img-counter{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.7);color:#fff;padding:3px 12px;border-radius:15px;font-size:.8rem;font-weight:700;z-index:5}
+.card-body{padding:22px;display:flex;flex-direction:column;flex-grow:1}
+.hotel-location{font-size:.9rem;color:var(--primary);font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.hotel-name{font-size:1.4rem;font-weight:900;margin-bottom:12px}
+.hotel-features{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:15px}
+.feature-tag{background:rgba(0,119,182,.1);color:var(--primary);font-size:.8rem;padding:5px 12px;border-radius:8px;font-weight:700}
+.hotel-details-list{list-style:none;font-size:.9rem;color:var(--text-muted);margin-bottom:15px;border-top:1px dashed rgba(100,116,139,.3);padding-top:12px}
+.hotel-details-list li{margin-bottom:6px;display:flex;gap:8px}
+.hotel-details-list li i{color:var(--primary);margin-top:5px;flex-shrink:0}
+.avail-mini{display:flex;gap:5px;margin-bottom:15px;flex-wrap:wrap;align-items:center}
+.avail-month{background:rgba(56,176,0,.1);color:#38b000;padding:4px 10px;border-radius:8px;font-size:.75rem;font-weight:800;border:1px solid rgba(56,176,0,.3);cursor:pointer;transition:var(--transition)}
+.avail-month:hover{background:#38b000;color:#fff}
+.card-footer{margin-top:auto;border-top:1px solid rgba(100,116,139,.15);padding-top:15px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.price-val{font-size:1.4rem;font-weight:900;color:var(--primary-dark)}
+[data-theme="dark"] .price-val{color:var(--primary)}
+.price-val span{font-size:.8rem;font-weight:700;color:var(--text-muted);display:block}
+.btn-card-book{background:linear-gradient(45deg,var(--primary),var(--secondary));color:#fff;padding:10px 20px;border-radius:10px;border:none;cursor:pointer;font-family:'Cairo',sans-serif;font-weight:800;font-size:.9rem;transition:var(--transition)}
+.btn-card-book:hover{transform:translateY(-2px);background:var(--primary-dark)}
+.bus-section,.trip-section{background:var(--card-bg);padding:50px 5%;margin:60px auto;max-width:1200px;border-radius:20px;box-shadow:var(--shadow)}
+.btn-transport-book{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(45deg,var(--primary),var(--secondary));color:#fff;padding:14px 36px;border-radius:35px;text-decoration:none;font-weight:900;font-size:1.05rem;box-shadow:0 10px 25px rgba(0,119,182,.35);transition:var(--transition);font-family:'Cairo',sans-serif}
+.btn-transport-book:hover{transform:translateY(-4px);box-shadow:0 15px 35px rgba(0,119,182,.5);background:var(--primary-dark)}
+.btn-transport-book i{font-size:1.3rem}
+.bus-pricing-table{width:100%;border-collapse:collapse;margin-top:25px;background:var(--bg-light);border-radius:15px;overflow:hidden}
+.bus-pricing-table th,.bus-pricing-table td{padding:14px 20px;text-align:right;border-bottom:1px solid rgba(100,116,139,.15);font-size:1rem}
+.bus-pricing-table th{background:var(--primary-dark);color:#fff;font-weight:800}
+[data-theme="dark"] .bus-pricing-table th{background:var(--primary);color:#07090e}
+.bus-pricing-table tr:last-child td{border-bottom:none}
+.trip-itinerary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin:25px 0}
+.itinerary-box{background:var(--bg-light);padding:22px;border-radius:15px;border-right:6px solid var(--primary);transition:var(--transition)}
+.itinerary-box:hover{transform:translateY(-5px)}
+.itinerary-box h4{color:var(--primary-dark);margin-bottom:12px;font-size:1.2rem;font-weight:800}
+[data-theme="dark"] .itinerary-box h4{color:var(--primary)}
+.itinerary-box p{color:var(--text-muted);font-size:.95rem}
+.trip-pricing-box{background:rgba(0,119,182,.08);padding:22px;border-radius:15px;text-align:center;margin-top:25px}
+.trip-pricing-box h3{color:var(--primary);margin-bottom:10px}
+.floating-whatsapp{position:fixed;bottom:30px;left:30px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.9rem;box-shadow:0 10px 25px rgba(37,211,102,.5);z-index:1000;text-decoration:none;transition:var(--transition)}
+.floating-whatsapp:hover{transform:scale(1.1)}
+.back-to-top{position:fixed;bottom:30px;right:30px;background:var(--primary);color:#fff;width:48px;height:48px;border-radius:50%;border:none;cursor:pointer;font-size:1.1rem;box-shadow:0 8px 20px rgba(0,119,182,.4);z-index:999;opacity:0;visibility:hidden;transition:var(--transition)}
+.back-to-top.show{opacity:1;visibility:visible}
+.social-proof{position:fixed;bottom:100px;left:30px;background:var(--card-bg);border-radius:14px;padding:14px 18px;box-shadow:0 15px 35px rgba(0,0,0,.15);display:flex;align-items:center;gap:12px;max-width:320px;z-index:998;transform:translateX(-450px);opacity:0;transition:transform .5s,opacity .3s;border-right:4px solid #25d366}
+.social-proof.show{transform:translateX(0);opacity:1}
+.social-proof i{color:#25d366;font-size:1.8rem}
+.social-proof span{font-size:.85rem;font-weight:700;line-height:1.5;flex:1}
+.social-proof-close{background:none;border:none;color:var(--text-muted);cursor:pointer;font-size:1rem}
+.chatbot-toggle{position:fixed;bottom:100px;right:30px;background:linear-gradient(45deg,var(--primary),var(--secondary));color:#fff;width:56px;height:56px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 10px 25px rgba(0,119,182,.5);z-index:997;transition:var(--transition)}
+.chatbot-toggle:hover{transform:scale(1.1)}
+.chat-badge{position:absolute;top:5px;right:5px;width:12px;height:12px;background:#e63946;border-radius:50%;border:2px solid #fff}
+.chatbot-window{position:fixed;bottom:170px;right:30px;width:360px;max-width:calc(100vw - 40px);height:500px;max-height:calc(100vh - 200px);background:var(--card-bg);border-radius:20px;box-shadow:0 25px 60px rgba(0,0,0,.25);display:flex;flex-direction:column;z-index:1001;transform:translateY(20px) scale(.9);opacity:0;visibility:hidden;transition:var(--transition);overflow:hidden}
+.chatbot-window.open{transform:translateY(0) scale(1);opacity:1;visibility:visible}
+.chatbot-header{background:linear-gradient(135deg,var(--primary-dark),var(--primary));color:#fff;padding:14px 18px;display:flex;align-items:center;gap:12px}
+.chatbot-avatar{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.chatbot-header h4{font-size:.95rem;font-weight:800}
+.chatbot-status{font-size:.72rem;color:#4ade80;font-weight:700}
+.chatbot-close{margin-right:auto;background:none;border:none;color:#fff;font-size:1.2rem;cursor:pointer}
+.chatbot-messages{flex:1;padding:15px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;background:var(--bg-light)}
+.chat-msg{max-width:80%;padding:10px 14px;border-radius:15px;font-size:.88rem;line-height:1.6}
+.chat-msg.bot{background:var(--card-bg);color:var(--text-dark);align-self:flex-start;border-bottom-left-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.chat-msg.user{background:var(--primary);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.chat-quick-replies{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.quick-reply{background:rgba(0,119,182,.1);color:var(--primary);border:1px solid var(--primary);padding:5px 12px;border-radius:15px;font-size:.78rem;font-weight:700;cursor:pointer;font-family:'Cairo',sans-serif;transition:var(--transition)}
+.quick-reply:hover{background:var(--primary);color:#fff}
+.chatbot-input{display:flex;padding:12px;gap:8px;border-top:1px solid rgba(100,116,139,.15);background:var(--card-bg)}
+#chatbotInput{flex:1;padding:10px 15px;border-radius:20px;border:2px solid rgba(100,116,139,.2);background:var(--bg-light);color:var(--text-dark);font-family:'Cairo',sans-serif;font-size:.88rem}
+#chatbotInput:focus{outline:none;border-color:var(--primary)}
+.chatbot-send{background:var(--primary);color:#fff;border:none;width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);display:flex;align-items:center;justify-content:center;z-index:2000;padding:20px;opacity:0;visibility:hidden;transition:var(--transition);backdrop-filter:blur(5px)}
+.modal-overlay.show{opacity:1;visibility:visible}
+.modal-content{background:var(--card-bg);border-radius:20px;padding:30px;max-width:600px;width:100%;position:relative;max-height:92vh;overflow-y:auto;transform:scale(.9);transition:var(--transition)}
+.modal-overlay.show .modal-content{transform:scale(1)}
+.modal-close{position:absolute;top:15px;left:15px;background:var(--bg-light);border:none;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:1rem;color:var(--text-dark);display:flex;align-items:center;justify-content:center;transition:var(--transition);z-index:10}
+.modal-close:hover{background:#e63946;color:#fff}
+.wizard-progress{display:flex;align-items:center;margin:15px 0 25px;padding:0 5px}
+.wizard-step{display:flex;flex-direction:column;align-items:center;gap:5px}
+.wizard-step span{width:34px;height:34px;border-radius:50%;background:var(--bg-light);color:var(--text-muted);display:flex;align-items:center;justify-content:center;font-weight:800;border:2px solid rgba(100,116,139,.2);transition:var(--transition);font-size:.9rem}
+.wizard-step label{font-size:.72rem;font-weight:700;color:var(--text-muted)}
+.wizard-step.active span{background:var(--primary);color:#fff;border-color:var(--primary);transform:scale(1.1)}
+.wizard-step.active label{color:var(--primary)}
+.wizard-step.completed span{background:#38b000;color:#fff;border-color:#38b000}
+.wizard-line{flex:1;height:3px;background:rgba(100,116,139,.2);border-radius:2px;margin:0 6px;margin-bottom:22px}
+.wizard-line.completed{background:#38b000}
+.wizard-page{display:none}
+.wizard-page.active{display:block}
+.wizard-page h2{color:var(--primary-dark);font-size:1.3rem;margin-bottom:6px;padding-left:40px}
+[data-theme="dark"] .wizard-page h2,[data-theme="dark"] .wizard-page h3{color:var(--primary)}
+.wizard-page h3{color:var(--primary-dark);margin-bottom:18px;font-size:1.2rem}
+.wizard-price{color:var(--primary);font-size:1.1rem;font-weight:800;margin-bottom:18px;padding-left:40px}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;margin-bottom:6px;font-weight:700;font-size:.88rem}
+.form-group input{width:100%;padding:12px 15px;border-radius:10px;border:2px solid rgba(100,116,139,.2);background:var(--bg-light);color:var(--text-dark);font-family:'Cairo',sans-serif;font-size:1rem}
+.form-group input:focus{outline:none;border-color:var(--primary)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.counter-input{display:flex;align-items:center;gap:8px}
+.counter-input button{width:40px;height:40px;border-radius:10px;border:2px solid var(--primary);background:var(--card-bg);color:var(--primary);font-size:1.3rem;font-weight:900;cursor:pointer;font-family:'Cairo',sans-serif}
+.counter-input button:hover{background:var(--primary);color:#fff}
+.counter-input input{flex:1;text-align:center;padding:10px;border-radius:10px;border:2px solid rgba(100,116,139,.2);background:var(--bg-light);color:var(--text-dark);font-family:'Cairo',sans-serif;font-size:1.1rem;font-weight:800}
+.wizard-buttons{display:flex;gap:10px;margin-top:22px}
+.btn-wizard-back,.btn-wizard-next,.btn-wizard-submit{flex:1;padding:12px;border-radius:12px;border:none;font-family:'Cairo',sans-serif;font-weight:800;font-size:.95rem;cursor:pointer;transition:var(--transition)}
+.btn-wizard-back{background:var(--bg-light);color:var(--text-dark);border:2px solid rgba(100,116,139,.2)}
+.btn-wizard-next{background:linear-gradient(45deg,var(--primary),var(--secondary));color:#fff}
+.btn-wizard-submit{background:linear-gradient(45deg,#25d366,#128c7e);color:#fff;display:flex;align-items:center;justify-content:center;gap:8px}
+.summary-box{background:var(--bg-light);padding:18px;border-radius:12px;margin-bottom:15px}
+.summary-row{display:flex;justify-content:space-between;padding:7px 0;font-size:.92rem;border-bottom:1px dashed rgba(100,116,139,.2);gap:10px}
+.summary-row:last-child{border-bottom:none}
+.summary-row strong{flex-shrink:0}
+.summary-row span{text-align:left}
+.summary-total{background:linear-gradient(45deg,var(--primary),var(--secondary));color:#fff;padding:12px;border-radius:10px;display:flex;justify-content:space-between;font-weight:800;font-size:1.05rem;margin-top:10px}
+.calendar-modal .modal-content{max-width:700px}
+.calendar-header{text-align:center;margin-bottom:20px;padding-left:40px}
+.calendar-header h2{color:var(--primary-dark)}
+[data-theme="dark"] .calendar-header h2{color:var(--primary)}
+.calendar-months{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.calendar-month{padding:16px 10px;border-radius:12px;text-align:center;font-weight:800;font-size:.85rem;border:2px solid rgba(100,116,139,.15);background:var(--bg-light);color:var(--text-muted);transition:var(--transition)}
+.calendar-month.available{background:rgba(56,176,0,.1);border-color:#38b000;color:#38b000;cursor:pointer}
+.calendar-month.available:hover{background:#38b000;color:#fff}
+.calendar-legend{display:flex;gap:20px;justify-content:center;margin-top:18px;font-size:.82rem;flex-wrap:wrap}
+.legend-item{display:flex;align-items:center;gap:6px;color:var(--text-muted);font-weight:700}
+.legend-dot{width:12px;height:12px;border-radius:50%}
+.legend-dot.green{background:#38b000}
+.legend-dot.gray{background:rgba(100,116,139,.3)}
+.install-pwa-btn{position:fixed;bottom:170px;left:30px;background:linear-gradient(45deg,#25d366,#128c7e);color:#fff;padding:10px 18px;border-radius:30px;border:none;cursor:pointer;font-family:'Cairo',sans-serif;font-weight:800;font-size:.85rem;box-shadow:0 8px 20px rgba(37,211,102,.4);z-index:996;display:flex;align-items:center;gap:6px}
+.toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(100px);background:var(--text-dark);color:var(--bg-light);padding:13px 22px;border-radius:12px;font-weight:700;z-index:3000;opacity:0;transition:var(--transition);display:flex;align-items:center;gap:10px;max-width:90%}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.toast i{color:#25d366;font-size:1.2rem}
+footer{background:#03045e;color:#cbd5e1;padding:45px 5% 25px;text-align:center;margin-top:70px}
+footer p{margin-bottom:10px}
+.footer-links{display:flex;justify-content:center;gap:20px;margin:18px 0;flex-wrap:wrap}
+.footer-links a{color:#cbd5e1;text-decoration:none;font-weight:700}
+.footer-links a:hover{color:var(--accent)}
+.no-results{grid-column:1/-1;text-align:center;padding:50px 20px;color:var(--text-muted);font-size:1.1rem}
+.no-results i{font-size:3rem;display:block;margin-bottom:12px;color:var(--primary);opacity:.5}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:900px){.calendar-months{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:500px){
+.hero{height:65vh}.hero h1{font-size:1.6rem}.hero-badge{font-size:.8rem;padding:6px 14px}
+.exclusive-section{margin:20px 15px;padding:22px 15px}
+.floating-whatsapp{width:50px;height:50px;font-size:1.6rem;bottom:20px;left:20px}
+.back-to-top{width:44px;height:44px;bottom:20px;right:20px}
+.chatbot-toggle{width:50px;height:50px;font-size:1.3rem;bottom:82px;right:20px}
+.social-proof{bottom:82px;left:15px;max-width:calc(100% - 90px);padding:12px}
+.chatbot-window{bottom:145px;right:15px;height:450px}
+.form-row{grid-template-columns:1fr}.modal-content{padding:22px 18px}
+.weather-grid{grid-template-columns:1fr}.calendar-months{grid-template-columns:repeat(2,1fr)}
+.install-pwa-btn{bottom:140px;left:15px;font-size:.78rem}
+.wizard-step label{display:none}.wizard-step span{width:28px;height:28px;font-size:.8rem}
+.btn-transport-book{padding:12px 28px;font-size:.95rem}
+}
+</style>
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<div id="splash-screen">
+    <img src="https://cdn.imagetourls.com/uploads/tyImg/Py6Ksy2K.png" alt="logo" class="splash-logo">
+    <h2 class="splash-title" data-i18n="splash_text">مرحباً بكم في سافروا ترافل</h2>
+    <p class="splash-sub" data-i18n="splash_sub">رحلتك تبدأ معانا .. جاري تحميل الموقع 💙</p>
+    <div class="splash-loader"></div>
+</div>
+
+<div class="top-bar">
+    <div class="top-bar-info">
+        <span><i class="fa-solid fa-phone"></i> 01050083130</span>
+        <span data-i18n="support_247"><i class="fa-solid fa-clock"></i> متابعة 24 ساعة</span>
+    </div>
+    <div class="controls-bar">
+        <button class="control-btn" onclick="toggleTheme()"><i class="fa-solid fa-moon" id="theme-icon"></i> <span id="theme-text">الوضع الداكن</span></button>
+        <button class="control-btn" onclick="toggleLanguage()"><i class="fa-solid fa-globe"></i> <span id="lang-text">English</span></button>
+    </div>
+</div>
+
+<header>
+    <nav class="navbar">
+        <a href="#home" class="logo-container">
+            <img src="https://cdn.imagetourls.com/uploads/tyImg/Py6Ksy2K.png" alt="logo">
+            <div class="logo-text">سافروا <span>ترافل</span></div>
+        </a>
+        <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')"><i class="fa-solid fa-bars"></i></button>
+        <ul class="nav-links">
+            <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="#hotels" data-i18n="nav_hotels">الفنادق</a></li>
+            <li><a href="#transport" data-i18n="nav_transport">النقل</a></li>
+            <li><a href="#trip" data-i18n="nav_trip">دهب وسانت كاترين</a></li>
+            <li><a href="https://wa.me/201050083130" target="_blank" class="btn-book-nav" data-i18n="nav_book"><i class="fa-brands fa-whatsapp"></i> احجز الآن</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="hero-badge" data-i18n="hero_badge">💙 عروض صيف 2026 - كومشن مميز للشركات</span>
+        <h1 data-i18n="hero_title">سافروا ترافل .. رحلتك تبدأ معانا وراحتك تهمنا</h1>
+        <p data-i18n="hero_desc">وجهتكم لحجز الفنادق والرحلات السياحية (شرم الشيخ، الغردقة، دهب، مرسى مطروح، الساحل الشمالي)</p>
+    </div>
+</section>
+
+<section class="weather-section">
+    <div class="weather-grid" id="weatherGrid">
+        <div class="weather-card" data-city="sharm" data-lat="27.9158" data-lon="34.3300">
+            <div class="weather-icon">⏳</div>
+            <div class="weather-info">
+                <div class="weather-city">شرم الشيخ 🌴</div>
+                <div class="weather-temp">--°</div>
+                <div class="weather-desc">جاري التحميل...</div>
+            </div>
+        </div>
+        <div class="weather-card" data-city="hurghada" data-lat="27.2579" data-lon="33.8116">
+            <div class="weather-icon">⏳</div>
+            <div class="weather-info">
+                <div class="weather-city">الغردقة 🏖️</div>
+                <div class="weather-temp">--°</div>
+                <div class="weather-desc">جاري التحميل...</div>
+            </div>
+        </div>
+        <div class="weather-card" data-city="dahab" data-lat="28.5091" data-lon="34.5136">
+            <div class="weather-icon">⏳</div>
+            <div class="weather-info">
+                <div class="weather-city">دهب 🏝️</div>
+                <div class="weather-temp">--°</div>
+                <div class="weather-desc">جاري التحميل...</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="exclusive-section reveal">
+    <div class="exclusive-title" data-i18n="exclusive_title">🏨 فنادق التعاقد المباشر والحصري</div>
+    <div class="exclusive-grid">
+        <div class="exclusive-card"><i class="fa-solid fa-hotel"></i><div><h3 data-i18n="ocean_club">فندق أوشن كلوب</h3><p data-i18n="ocean_desc">تعاقد مباشر بأفضل الأسعار</p></div></div>
+        <div class="exclusive-card"><i class="fa-solid fa-building-user"></i><div><h3 data-i18n="city_sharm">فندق سيتي شرم</h3><p data-i18n="city_desc">إقامة فاخرة وخدمات حصرية</p></div></div>
+    </div>
+</div>
+
+<section id="hotels">
+    <div class="section-header reveal">
+        <h2 data-i18n="hotels_header">عروض الفنادق لصيف 2026 🌊</h2>
+    </div>
+    <div class="search-filter-bar">
+        <div class="search-wrapper">
+            <i class="fa-solid fa-search"></i>
+            <input type="text" id="searchInput" placeholder="ابحث عن فندق..." oninput="filterCards()">
+        </div>
+        <div class="filters-row">
+            <button class="filter-btn active" onclick="setFilter('all',this)" data-i18n="filter_all">الكل</button>
+            <button class="filter-btn" onclick="setFilter('exclusive',this)" data-i18n="filter_exclusive">حصري</button>
+            <button class="filter-btn" onclick="setFilter('bestseller',this)" data-i18n="filter_bestseller">الأكثر مبيعاً</button>
+            <button class="filter-btn" onclick="setFilter('economic',this)" data-i18n="filter_economic">اقتصادي</button>
+            <button class="filter-btn" onclick="setFilter('royal',this)" data-i18n="filter_royal">ملكي</button>
+        </div>
+    </div>
+    <div class="destinations-tabs">
+        <button class="tab-btn active" data-tab="sharm" onclick="switchTab('sharm',this)" data-i18n="tab_sharm">شرم الشيخ 🌴</button>
+        <button class="tab-btn" data-tab="hurghada" onclick="switchTab('hurghada',this)" data-i18n="tab_hurghada">الغردقة 🏖️</button>
+        <button class="tab-btn" data-tab="dahab" onclick="switchTab('dahab',this)" data-i18n="tab_dahab">دهب 🏝️</button>
+    </div>
+    <div id="sharm-section" class="tab-content"><div class="cards-grid" id="sharmGrid"></div></div>
+    <div id="hurghada-section" class="tab-content" style="display:none"><div class="cards-grid" id="hurghadaGrid"></div></div>
+    <div id="dahab-section" class="tab-content" style="display:none"><div class="cards-grid" id="dahabGrid"></div></div>
+</section>
+
+<section class="bus-section reveal" id="transport">
+    <div class="section-header" style="margin-top:0">
+        <h2 data-i18n="transport_header">🚎 خدمة النقل السياحي 2026</h2>
+        <div style="margin-top:20px">
+            <a href="https://wa.me/201050083130" target="_blank" class="btn-transport-book">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="book_transport">احجز الآن</span>
+            </a>
+        </div>
+    </div>
+    <table class="bus-pricing-table">
+        <thead><tr><th data-i18n="table_route">المسار</th><th data-i18n="table_price">سعر الذهاب والعودة</th></tr></thead>
+        <tbody>
+            <tr><td data-i18n="route_1">المنصورة ← شرم الشيخ</td><td><strong data-price-egp="675" data-price-full>675 ج.م</strong></td></tr>
+            <tr><td data-i18n="route_2">المنصورة ← الغردقة</td><td><strong data-price-egp="650" data-price-full>650 ج.م</strong></td></tr>
+            <tr><td data-i18n="route_3">القاهرة ← شرم الشيخ</td><td><strong data-price-egp="650" data-price-full>650 ج.م</strong></td></tr>
+            <tr><td data-i18n="route_4">القاهرة ← الغردقة</td><td><strong data-price-egp="650" data-price-full>650 ج.م</strong></td></tr>
+            <tr><td data-i18n="route_5">القاهرة ← سهل حشيش ومكادي</td><td><strong data-price-egp="900" data-price-full>900 ج.م</strong></td></tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="trip-section reveal" id="trip">
+    <div class="section-header" style="margin-top:0">
+        <h2 data-i18n="trip_header">❤️ دهب وسانت كاترين ❤️</h2>
+        <p data-i18n="trip_duration">يومان بدون مبيت (التحرك الخميس مساءً - العودة السبت ليلاً)</p>
+    </div>
+    <div class="trip-itinerary-grid">
+        <div class="itinerary-box"><h4 data-i18n="trip_day1_title">🌊 دهب (اليوم الأول)</h4><p data-i18n="trip_day1_desc">الثري بولز + سنوركلينج + كافيتريات بدوية + سهرة جبل الطويلات + جولة الممشى السياحي</p></div>
+        <div class="itinerary-box"><h4 data-i18n="trip_day2_title">🏔️ سانت كاترين (اليوم الثاني)</h4><p data-i18n="trip_day2_desc">صعود الجبل ليلاً + شروق من القمة + زيارة الدير والكنيسة وبير موسى</p></div>
+        <div class="itinerary-box"><h4 data-i18n="trip_gear_title">🎒 المستلزمات</h4><p data-i18n="trip_gear_desc">إثبات شخصية، حذاء رياضي، كشاف، جاكيت، كوفية، جوانتي، مياه، سناكس</p></div>
+    </div>
+    <div class="trip-pricing-box">
+        <h3 data-i18n="trip_pricing_title">💰 الأسعار والمواعيد</h3>
+        <p>
+            <strong data-price-egp="950" data-price-full>950 ج.م</strong> <span data-i18n="per_person_label">للفرد:</span>
+            <span data-i18n="trip_from_cities">من (القاهرة، المنصورة، الزقازيق، الإسماعيلية، دمياط)</span>
+            |
+            <strong data-price-egp="1400" data-price-full>1,400 ج.م</strong>:
+            <span data-i18n="trip_from_alex">من الإسكندرية</span>
+        </p>
+        <p style="color:var(--text-muted);font-size:.9rem;margin-top:8px" data-i18n="trip_dates">مواعيد: شهر 10 (8,15,22,29) | شهر 11 (5,12,19,26) | شهر 12 (3,10,17,24,31)</p>
+        <p style="color:#d97706;font-weight:700;margin-top:8px;font-size:.9rem" data-i18n="trip_kids">الأطفال مجاناً حتى 6 سنوات</p>
+    </div>
+</section>
+
+<a href="https://wa.me/201050083130" target="_blank" class="floating-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fa-solid fa-arrow-up"></i></button>
+
+<div class="social-proof" id="socialProof">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="socialProofText"></span>
+    <button class="social-proof-close" onclick="document.getElementById('socialProof').classList.remove('show')"><i class="fa-solid fa-times"></i></button>
+</div>
+
+<button class="install-pwa-btn" id="installPwaBtn" style="display:none" onclick="installPwa()"><i class="fa-solid fa-mobile-screen-button"></i> <span data-i18n="install_app">تثبيت التطبيق</span></button>
+
+<button class="chatbot-toggle" id="chatbotToggle" onclick="toggleChatbot()"><i class="fa-solid fa-comments"></i><span class="chat-badge"></span></button>
+<div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+        <div class="chatbot-avatar"><i class="fa-solid fa-headset"></i></div>
+        <div><h4 data-i18n="chatbot_name">مساعد سافروا</h4><span class="chatbot-status">● متصل</span></div>
+        <button class="chatbot-close" onclick="toggleChatbot()"><i class="fa-solid fa-times"></i></button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages"></div>
+    <div class="chatbot-input">
+        <input type="text" id="chatbotInput" placeholder="اكتب رسالتك..." onkeydown="if(event.key==='Enter') sendChatMessage()">
+        <button class="chatbot-send" onclick="sendChatMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+</div>
+
+<div class="modal-overlay" id="bookingModal" onclick="if(event.target===this) closeBooking()">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeBooking()"><i class="fa-solid fa-times"></i></button>
+        <div class="wizard-progress" id="wizardProgress">
+            <div class="wizard-step active" data-step="1"><span>1</span><label data-i18n="wiz_dates">التواريخ</label></div>
+            <div class="wizard-line"></div>
+            <div class="wizard-step" data-step="2"><span>2</span><label data-i18n="wiz_rooms">الغرف</label></div>
+            <div class="wizard-line"></div>
+            <div class="wizard-step" data-step="3"><span>3</span><label data-i18n="wiz_contact">بياناتك</label></div>
+            <div class="wizard-line"></div>
+            <div class="wizard-step" data-step="4"><span>4</span><label data-i18n="wiz_confirm">تأكيد</label></div>
+        </div>
+        <div class="wizard-page active" data-page="1">
+            <h2 id="wizardHotelName">اسم الفندق</h2>
+            <p class="wizard-price" id="wizardPrice">0</p>
+            <div class="form-row">
+                <div class="form-group"><label data-i18n="booking_checkin">تاريخ الوصول</label><input type="date" id="wizCheckin"></div>
+                <div class="form-group"><label data-i18n="booking_checkout">تاريخ المغادرة</label><input type="date" id="wizCheckout"></div>
+            </div>
+            <div class="wizard-buttons"><button class="btn-wizard-next" onclick="wizardNext(2)" data-i18n="wiz_next">التالي</button></div>
+        </div>
+        <div class="wizard-page" data-page="2">
+            <h3 data-i18n="wiz_rooms_guests">الغرف والضيوف</h3>
+            <div class="form-group"><label data-i18n="wiz_rooms_count">عدد الغرف</label><div class="counter-input"><button onclick="adjustCounter('wizRooms',-1)">−</button><input type="number" id="wizRooms" value="1" min="1" max="10"><button onclick="adjustCounter('wizRooms',1)">+</button></div></div>
+            <div class="form-group"><label data-i18n="wiz_adults">البالغين</label><div class="counter-input"><button onclick="adjustCounter('wizAdults',-1)">−</button><input type="number" id="wizAdults" value="2" min="1" max="20"><button onclick="adjustCounter('wizAdults',1)">+</button></div></div>
+            <div class="form-group"><label data-i18n="wiz_children">الأطفال</label><div class="counter-input"><button onclick="adjustCounter('wizChildren',-1)">−</button><input type="number" id="wizChildren" value="0" min="0" max="10"><button onclick="adjustCounter('wizChildren',1)">+</button></div></div>
+            <div class="wizard-buttons"><button class="btn-wizard-back" onclick="wizardNext(1)" data-i18n="wiz_prev">السابق</button><button class="btn-wizard-next" onclick="wizardNext(3)" data-i18n="wiz_next">التالي</button></div>
+        </div>
+        <div class="wizard-page" data-page="3">
+            <h3 data-i18n="wiz_your_data">بياناتك</h3>
+            <div class="form-group"><label data-i18n="booking_name">الاسم بالكامل</label><input type="text" id="wizName" placeholder="أدخل اسمك"></div>
+            <div class="form-group"><label data-i18n="booking_phone">رقم الهاتف</label><input type="tel" id="wizPhone" placeholder="01xxxxxxxxx"></div>
+            <div class="wizard-buttons"><button class="btn-wizard-back" onclick="wizardNext(2)" data-i18n="wiz_prev">السابق</button><button class="btn-wizard-next" onclick="wizardNext(4)" data-i18n="wiz_next">التالي</button></div>
+        </div>
+        <div class="wizard-page" data-page="4">
+            <h3 data-i18n="wiz_summary">ملخص الحجز</h3>
+            <div id="wizardSummary"></div>
+            <div class="wizard-buttons"><button class="btn-wizard-back" onclick="wizardNext(3)" data-i18n="wiz_prev">السابق</button><button class="btn-wizard-submit" onclick="submitWizard()"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="wiz_send">تأكيد عبر واتساب</span></button></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-overlay calendar-modal" id="calendarModal" onclick="if(event.target===this) closeCalendar()">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeCalendar()"><i class="fa-solid fa-times"></i></button>
+        <div class="calendar-header">
+            <h2 id="calendarHotelName">اسم الفندق</h2>
+            <p style="color:var(--text-muted);font-size:.9rem" data-i18n="calendar_sub">فترات الإتاحة</p>
+        </div>
+        <div class="calendar-months" id="calendarMonths"></div>
+        <div class="calendar-legend">
+            <div class="legend-item"><span class="legend-dot green"></span><span data-i18n="legend_available">متاح</span></div>
+            <div class="legend-item"><span class="legend-dot gray"></span><span data-i18n="legend_unavailable">غير متاح</span></div>
+        </div>
+    </div>
+</div>
+
+<div class="toast" id="toast"><i class="fa-solid fa-check-circle"></i><span id="toastMsg"></span></div>
+
+<footer>
+    <p data-i18n="footer_slogan">سافروا ترافل معاك بأفضل الأسعار وخدمة 24 ساعة 🔝 💙</p>
+    <p data-i18n="footer_partners">نرحب بالتعاون مع جميع الشركات السياحية 🤝</p>
+    <div class="footer-links">
+        <a href="tel:01050083130"><i class="fa-solid fa-phone"></i> 01050083130</a>
+        <a href="https://wa.me/201050083130" target="_blank"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+    </div>
+    <p style="margin-top:15px;font-size:.85rem;color:#94a3b8">© 2026 سافروا ترافل</p>
+</footer>
+
+<script>
+/* ============ TRANSLATIONS ============ */
+const translations = {
+ar: {
+    splash_text: "مرحباً بكم في سافروا ترافل", splash_sub: "رحلتك تبدأ معانا .. جاري تحميل الموقع 💙",
+    support_247: "متابعة 24 ساعة", nav_home: "الرئيسية", nav_hotels: "الفنادق",
+    nav_transport: "النقل", nav_trip: "دهب وسانت كاترين", nav_book: "احجز الآن",
+    hero_badge: "💙 عروض صيف 2026 - كومشن مميز للشركات",
+    hero_title: "سافروا ترافل .. رحلتك تبدأ معانا وراحتك تهمنا",
+    hero_desc: "وجهتكم لحجز الفنادق والرحلات السياحية (شرم الشيخ، الغردقة، دهب، مرسى مطروح، الساحل الشمالي)",
+    exclusive_title: "🏨 فنادق التعاقد المباشر والحصري",
+    ocean_club: "فندق أوشن كلوب", ocean_desc: "تعاقد مباشر بأفضل الأسعار",
+    city_sharm: "فندق سيتي شرم", city_desc: "إقامة فاخرة وخدمات حصرية",
+    hotels_header: "عروض الفنادق لصيف 2026 🌊",
+    filter_all: "الكل", filter_exclusive: "حصري", filter_bestseller: "الأكثر مبيعاً",
+    filter_economic: "اقتصادي", filter_royal: "ملكي",
+    tab_sharm: "شرم الشيخ 🌴", tab_hurghada: "الغردقة 🏖️", tab_dahab: "دهب 🏝️",
+    transport_header: "🚎 خدمة النقل السياحي 2026",
+    book_transport: "احجز الآن",
+    table_route: "المسار", table_price: "سعر الذهاب والعودة",
+    route_1: "المنصورة ← شرم الشيخ", route_2: "المنصورة ← الغردقة",
+    route_3: "القاهرة ← شرم الشيخ", route_4: "القاهرة ← الغردقة",
+    route_5: "القاهرة ← سهل حشيش ومكادي",
+    trip_header: "❤️ دهب وسانت كاترين ❤️",
+    trip_duration: "يومان بدون مبيت (التحرك الخميس مساءً - العودة السبت ليلاً)",
+    trip_day1_title: "🌊 دهب (اليوم الأول)",
+    trip_day1_desc: "الثري بولز + سنوركلينج + كافيتريات بدوية + سهرة جبل الطويلات + جولة الممشى السياحي",
+    trip_day2_title: "🏔️ سانت كاترين (اليوم الثاني)",
+    trip_day2_desc: "صعود الجبل ليلاً + شروق من القمة + زيارة الدير والكنيسة وبير موسى",
+    trip_gear_title: "🎒 المستلزمات",
+    trip_gear_desc: "إثبات شخصية، حذاء رياضي، كشاف، جاكيت، كوفية، جوانتي، مياه، سناكس",
+    trip_pricing_title: "💰 الأسعار والمواعيد",
+    trip_dates: "مواعيد: شهر 10 (8,15,22,29) | شهر 11 (5,12,19,26) | شهر 12 (3,10,17,24,31)",
+    trip_kids: "الأطفال مجاناً حتى 6 سنوات",
+    footer_slogan: "سافروا ترافل معاك بأفضل الأسعار وخدمة 24 ساعة 🔝 💙",
+    footer_partners: "نرحب بالتعاون مع جميع الشركات السياحية 🤝",
+    book_now: "احجز الآن", per_person: "ج.م / للفرد", per_person_word: "للفرد",
+    per_person_label: "للفرد:", trip_from_cities: "من (القاهرة، المنصورة، الزقازيق، الإسماعيلية، دمياط)",
+    trip_from_alex: "من الإسكندرية",
+    board_label: "الإقامة:", period_label: "الفترة:", child_label: "الأطفال:",
+    booking_checkin: "تاريخ الوصول", booking_checkout: "تاريخ المغادرة",
+    booking_name: "الاسم بالكامل", booking_phone: "رقم الهاتف",
+    wiz_dates: "التواريخ", wiz_rooms: "الغرف", wiz_contact: "بياناتك", wiz_confirm: "تأكيد",
+    wiz_next: "التالي", wiz_prev: "السابق", wiz_rooms_guests: "الغرف والضيوف",
+    wiz_rooms_count: "عدد الغرف", wiz_adults: "البالغين", wiz_children: "الأطفال",
+    wiz_your_data: "بياناتك", wiz_summary: "ملخص الحجز", wiz_send: "تأكيد عبر واتساب",
+    toast_required: "يرجى ملء الحقول المطلوبة", toast_date_error: "تاريخ المغادرة يجب أن يكون بعد الوصول",
+    toast_fav_add: "تمت الإضافة للمفضلة ❤️", toast_fav_remove: "تمت الإزالة من المفضلة",
+    no_results: "لا توجد نتائج مطابقة", images_soon: "صور قريباً",
+    badge_exclusive: "حصري 🏨", badge_bestseller: "الأكثر مبيعاً ⭐",
+    badge_economic: "اقتصادي 💰", badge_royal: "ملكي 👑", badge_featured: "مميز ✨",
+    theme_light: "الوضع الفاتح", theme_dark: "الوضع الداكن",
+    install_app: "تثبيت التطبيق",
+    calendar_sub: "فترات الإتاحة", legend_available: "متاح", legend_unavailable: "غير متاح",
+    chatbot_name: "مساعد سافروا",
+    chatbot_welcome: "أهلاً وسهلاً 👋 أنا مساعد سافروا. كيف أقدر أساعدك؟",
+    whatsapp_msg_title: "مرحباً، أريد حجز:", whatsapp_hotel: "🏨 الفندق:",
+    whatsapp_price: "💰 السعر:", whatsapp_name: "👤 الاسم:", whatsapp_phone: "📱 الهاتف:",
+    whatsapp_checkin: "📅 الوصول:", whatsapp_checkout: "📅 المغادرة:",
+    whatsapp_guests: "👥 الضيوف:", whatsapp_nights: "🌙 الليالي:",
+    whatsapp_total: "💵 الإجمالي:", whatsapp_night: "ليلة",
+    summary_hotel: "الفندق", summary_price: "سعر الفرد/ليلة", summary_dates: "التواريخ",
+    summary_rooms: "الغرف", summary_guests: "الضيوف", summary_nights: "الليالي",
+    summary_total: "الإجمالي التقديري"
+},
+en: {
+    splash_text: "Welcome to Safaroo Travel", splash_sub: "Loading website 💙",
+    support_247: "24/7 Support", nav_home: "Home", nav_hotels: "Hotels",
+    nav_transport: "Transport", nav_trip: "Dahab & St. Catherine", nav_book: "Book Now",
+    hero_badge: "💙 Summer 2026 - Special Corporate Offers",
+    hero_title: "Safaroo Travel .. Your Journey Starts Here",
+    hero_desc: "Hotel & tour bookings (Sharm, Hurghada, Dahab, Marsa Matrouh, North Coast)",
+    exclusive_title: "🏨 Exclusive Direct Contract Hotels",
+    ocean_club: "Ocean Club Hotel", ocean_desc: "Direct contract at best rates",
+    city_sharm: "City Sharm Hotel", city_desc: "Luxury stay and exclusive service",
+    hotels_header: "Summer 2026 Hotel Offers 🌊",
+    filter_all: "All", filter_exclusive: "Exclusive", filter_bestseller: "Best Seller",
+    filter_economic: "Economic", filter_royal: "Royal",
+    tab_sharm: "Sharm 🌴", tab_hurghada: "Hurghada 🏖️", tab_dahab: "Dahab 🏝️",
+    transport_header: "🚎 Daily Transport 2026",
+    book_transport: "Book Now",
+    table_route: "Route", table_price: "Round Trip Price",
+    route_1: "Mansoura ← Sharm", route_2: "Mansoura ← Hurghada",
+    route_3: "Cairo ← Sharm", route_4: "Cairo ← Hurghada",
+    route_5: "Cairo ← Sahl Hasheesh & Makadi",
+    trip_header: "❤️ Dahab & St. Catherine ❤️",
+    trip_duration: "2 days no accommodation (Thu night - Sat night)",
+    trip_day1_title: "🌊 Dahab (Day 1)",
+    trip_day1_desc: "Three Pools + snorkeling + Bedouin cafes + Al-Tewilat night + walkway tour",
+    trip_day2_title: "🏔️ St. Catherine (Day 2)",
+    trip_day2_desc: "Night ascent + sunrise from peak + Monastery & Moses Well visit",
+    trip_gear_title: "🎒 Essentials",
+    trip_gear_desc: "ID, sports shoes, flashlight, jacket, scarf, gloves, water, snacks",
+    trip_pricing_title: "💰 Prices & Dates",
+    trip_dates: "Dates: Oct (8,15,22,29) | Nov (5,12,19,26) | Dec (3,10,17,24,31)",
+    trip_kids: "Children free up to 6 years",
+    footer_slogan: "Safaroo Travel - best prices & 24/7 service 🔝 💙",
+    footer_partners: "We welcome cooperation with all tour companies 🤝",
+    book_now: "Book Now", per_person: "USD / Person", per_person_word: "per person",
+    per_person_label: "per person:", trip_from_cities: "from (Cairo, Mansoura, Zagazig, Ismailia, Damietta)",
+    trip_from_alex: "from Alexandria",
+    board_label: "Board:", period_label: "Period:", child_label: "Children:",
+    booking_checkin: "Check-in", booking_checkout: "Check-out",
+    booking_name: "Full Name", booking_phone: "Phone",
+    wiz_dates: "Dates", wiz_rooms: "Rooms", wiz_contact: "Contact", wiz_confirm: "Confirm",
+    wiz_next: "Next", wiz_prev: "Prev", wiz_rooms_guests: "Rooms & Guests",
+    wiz_rooms_count: "Rooms", wiz_adults: "Adults", wiz_children: "Children",
+    wiz_your_data: "Your Data", wiz_summary: "Summary", wiz_send: "Confirm via WhatsApp",
+    toast_required: "Please fill required fields", toast_date_error: "Checkout must be after checkin",
+    toast_fav_add: "Added to favorites ❤️", toast_fav_remove: "Removed from favorites",
+    no_results: "No matching results", images_soon: "Images Soon",
+    badge_exclusive: "Exclusive 🏨", badge_bestseller: "Best Seller ⭐",
+    badge_economic: "Economic 💰", badge_royal: "Royal 👑", badge_featured: "Featured ✨",
+    theme_light: "Light Mode", theme_dark: "Dark Mode",
+    install_app: "Install App",
+    calendar_sub: "Availability periods", legend_available: "Available", legend_unavailable: "Unavailable",
+    chatbot_name: "Safaroo Assistant",
+    chatbot_welcome: "Welcome 👋 I'm Safaroo Assistant. How can I help?",
+    whatsapp_msg_title: "Hello, I want to book:", whatsapp_hotel: "🏨 Hotel:",
+    whatsapp_price: "💰 Price:", whatsapp_name: "👤 Name:", whatsapp_phone: "📱 Phone:",
+    whatsapp_checkin: "📅 Check-in:", whatsapp_checkout: "📅 Check-out:",
+    whatsapp_guests: "👥 Guests:", whatsapp_nights: "🌙 Nights:",
+    whatsapp_total: "💵 Total:", whatsapp_night: "night(s)",
+    summary_hotel: "Hotel", summary_price: "Price/person/night", summary_dates: "Dates",
+    summary_rooms: "Rooms", summary_guests: "Guests", summary_nights: "Nights",
+    summary_total: "Estimated Total"
+}};
+
+/* ============ EXCHANGE RATE — ثابت 54 ============ */
+const EXCHANGE_RATE = 54; // 1 USD = 54 EGP (سعر ثابت)
+
+function formatPrice(egp) {
+    if (currentLang === 'en') {
+        return '$' + Math.round(egp / EXCHANGE_RATE).toLocaleString('en-US');
+    }
+    return egp.toLocaleString('en-US') + ' ج.م';
+}
+
+function formatPriceNumber(egp) {
+    if (currentLang === 'en') {
+        return Math.round(egp / EXCHANGE_RATE).toLocaleString('en-US');
+    }
+    return egp.toLocaleString('en-US');
+}
+
+function updateAllPrices() {
+    document.querySelectorAll('[data-price-egp]').forEach(function(el) {
+        const egp = parseFloat(el.dataset.priceEgp);
+        if (isNaN(egp)) return;
+        if (el.hasAttribute('data-price-full')) {
+            el.textContent = formatPrice(egp);
+        } else {
+            el.textContent = formatPriceNumber(egp);
+        }
+    });
+}
+
+/* ============ STATE ============ */
+let currentLang = 'ar';
+let currentTab = 'sharm';
+let currentFilter = 'all';
+let favorites = JSON.parse(localStorage.getItem('safaroo_favorites') || '[]');
+let deferredPrompt = null;
+let wizardState = { hotel: '', hotelEn: '', price: 0, step: 1 };
+
+function t(k) { return (translations[currentLang] && translations[currentLang][k]) || k; }
+
+/* ============ HOTELS DATA ============ */
+const hotelsData = {
+sharm: [
+    { name: "فندق سيتي شرم", nameEn: "City Sharm Hotel", price: 7800, location: "شرم الشيخ", locationEn: "Sharm El Sheikh", type: "exclusive", board: "ترا سوفت", boardEn: "Ultra Soft", period: "1/7 - 31/10/2026", periodEn: "1/7 - 31/10/2026", childPolicy: "مجاناً حتى 12 سنة", childPolicyEn: "Free to 12 yrs", features: ["حصري","ترا سوفت"], featuresEn: ["Exclusive","Ultra Soft"], availMonths: ['2026-07','2026-08','2026-09','2026-10'],
+      images: ["https://www.image2url.com/r2/default/images/1792458625612-ef4eba6a-fd4d-48c0-8a19-f56e469c6046.jpg","https://www.image2url.com/r2/default/images/1792458777734-51720062-a90b-4d24-8c28-3ba15d8344d8.jpg","https://www.image2url.com/r2/default/images/1792458810362-39225ddf-290e-4b51-8526-36b51e2371fe.jpg","https://www.image2url.com/r2/default/images/1792458847022-b3e3c2a3-df8b-458f-b960-a1e68c05d3b7.jpg","https://www.image2url.com/r2/default/images/1792458887269-da509c99-daf9-4b21-929c-2d9080f15dad.jpg","https://www.image2url.com/r2/default/images/1792458979413-ea1599e0-2a29-4c8a-84ef-e77d2e4ab406.jpg"] },
+    { name: "فندق أوشن كلوب", nameEn: "Ocean Club Hotel", price: 2100, location: "شرم الشيخ", locationEn: "Sharm El Sheikh", type: "exclusive", board: "هاف بورد", boardEn: "Half Board", period: "1/7 - 31/10/2026", periodEn: "1/7 - 31/10/2026", childPolicy: "عرب +250 جنيه", childPolicyEn: "Arabs +250 EGP", features: ["حصري","شاطئ"], featuresEn: ["Exclusive","Beach"], availMonths: ['2026-07','2026-08','2026-09','2026-10'],
+      images: ["https://cdn.imagetourls.com/uploads/tyImg/REx4LFUW.jpg","https://www.image2url.com/r2/default/images/1792459269272-f3d918e8-f2d9-4300-8dbf-2dff58623ee4.jpg","https://www.image2url.com/r2/default/images/1792459233684-e5fa1e38-17dd-41b6-a4d5-c4334a1c59cb.jpg","https://www.image2url.com/r2/default/images/1792459204869-0bc67313-a320-4253-a612-4c3cebe1f26e.jpg"] },
+    { name: "فندق أمواج عيون", nameEn: "Amwaj Oyoun Hotel", price: 8900, location: "خليج نبق", locationEn: "Nabq Bay", type: "bestseller", board: "إقامة كاملة", boardEn: "All Inclusive", period: "1-31 أكتوبر", periodEn: "Oct 1-31", childPolicy: "الأول حتى 12، الثاني حتى 6", childPolicyEn: "1st to 12, 2nd to 6", features: ["صف أول","شاطئ","أكوا بارك"], featuresEn: ["Front Row","Beach","Aqua Park"], availMonths: ['2026-10'],
+      images: ["https://cdn.imagetourls.com/uploads/tyImg/ue1oZtmC.jpg","https://cdn.imagetourls.com/uploads/tyImg/rAqm8lAW.jpg","https://cdn.imagetourls.com/uploads/tyImg/b4KB57oC.jpg","https://cdn.imagetourls.com/uploads/tyImg/17rC9HKYP.jpg"] },
+    { name: "فندق شاركس باي", nameEn: "Sharks Bay Hotel", price: 5100, location: "سوهو سكوير", locationEn: "Soho Square", type: "economic", board: "إقامة كاملة", boardEn: "All Inclusive", period: "10 أكتوبر - 20 ديسمبر", periodEn: "Oct 10 - Dec 20", childPolicy: "الأول حتى 12، الثاني حتى 6", childPolicyEn: "1st to 12, 2nd to 6", features: ["صف أول","أكوا بارك"], featuresEn: ["Front Row","Aqua Park"], availMonths: ['2026-10','2026-11','2026-12'],
+      images: ["https://cdn.imagetourls.com/uploads/tyImg/849vn0U1.jpg","https://cdn.imagetourls.com/uploads/tyImg/DAgYbcF5.jpg","https://cdn.imagetourls.com/uploads/tyImg/izKMaP7V.jpg","https://cdn.imagetourls.com/uploads/tyImg/1eHsnc2wB.jpg"] },
+    { name: "فندق بانوراما نعمة هايتس", nameEn: "Panorama Naama Heights", price: 5850, location: "خليج نعمة", locationEn: "Naama Bay", type: "economic", board: "إقامة كاملة", boardEn: "All Inclusive", period: "11-30 أكتوبر", periodEn: "Oct 11-30", childPolicy: "الأول حتى 12", childPolicyEn: "1st to 12", features: ["صف ثاني","أكوا بارك"], featuresEn: ["2nd Row","Aqua Park"], availMonths: ['2026-10'],
+      images: ["https://cdn.imagetourls.com/uploads/tyImg/gaPaFkl1.jpg","https://cdn.imagetourls.com/uploads/tyImg/1eYO6tQtU.jpg","https://cdn.imagetourls.com/uploads/tyImg/1fENWagUd.jpg","https://cdn.imagetourls.com/uploads/tyImg/1b79Sv22R.jpg"] },
+    { name: "فندق رويال نعمة", nameEn: "Royal Naama Hotel", price: 7500, location: "خليج نعمة", locationEn: "Naama Bay", type: "bestseller", board: "إقامة كاملة", boardEn: "All Inclusive", period: "صيف 2026", periodEn: "Summer 2026", childPolicy: "حسب سياسة الفندق", childPolicyEn: "Per policy", features: ["خليج نعمة","خدمة ممتازة"], featuresEn: ["Naama Bay","Excellent"], availMonths: ['2026-06','2026-07','2026-08','2026-09'],
+      images: ["https://cdn.imagetourls.com/uploads/tyImg/51Mc9ymi.jpg","https://cdn.imagetourls.com/uploads/tyImg/15udM8Mkf.jpg","https://cdn.imagetourls.com/uploads/tyImg/gtyM3gRE.jpg"] },
+    { name: "فندق دبل تري هيلتون", nameEn: "DoubleTree Hilton", price: 14600, location: "سوهو سكوير", locationEn: "Soho Square", type: "royal", board: "إقامة كاملة", boardEn: "All Inclusive", period: "1 سبتمبر - 30 أكتوبر", periodEn: "Sep 1 - Oct 30", childPolicy: "الأول حتى 12، الثاني حتى 6", childPolicyEn: "1st to 12, 2nd to 6", features: ["صف أول","أكوا بارك","ديلوكس"], featuresEn: ["Front Row","Aqua Park","Deluxe"], availMonths: ['2026-09','2026-10'],
+      images: ["https://cdn.imagetourls.com/uploads/tyImg/o7CUKUwf.jpg","https://cdn.imagetourls.com/uploads/tyImg/chH1NPFY.jpg","https://cdn.imagetourls.com/uploads/tyImg/XlaMHaba.jpg","https://cdn.imagetourls.com/uploads/tyImg/EsgrDs8a.jpg"] }
+],
+hurghada: [
+    { name: "رويال لاجونز", nameEn: "Royal Lagoonz", price: 9150, location: "الممشى السياحي", locationEn: "Tourist Walk", type: "bestseller", board: "إقامة كاملة", boardEn: "All Inclusive", period: "11 أكتوبر - 28 ديسمبر", periodEn: "Oct 11 - Dec 28", childPolicy: "الأول حتى 12، الثاني حتى 6", childPolicyEn: "1st to 12, 2nd to 6", features: ["صف ثاني","أكوا بارك","شاطئ"], featuresEn: ["2nd Row","Aqua Park","Beach"], availMonths: ['2026-10','2026-11','2026-12'],
+      images: ["https://cdn.imagetourls.com/uploads/tyImg/miTuRcu0.jpg"] },
+    { name: "أمواج بيتش أبو سوما", nameEn: "Amwaj Beach Abu Soma", price: 12300, location: "سوما باي", locationEn: "Soma Bay", type: "bestseller", board: "إقامة كاملة", boardEn: "All Inclusive", period: "16 سبتمبر - 31 أكتوبر", periodEn: "Sep 16 - Oct 31", childPolicy: "الأول حتى 12، الثاني حتى 6", childPolicyEn: "1st to 12, 2nd to 6", features: ["صف أول","شاطئ","أكوا بارك"], featuresEn: ["Front Row","Beach","Aqua Park"], availMonths: ['2026-09','2026-10'],
+      images: ["https://cdn.imagetourls.com/uploads/tyImg/16NAk3HHA.jpg"] },
+    { name: "صني دايز البالاسيو", nameEn: "Sunny Days Palacio", price: 13500, location: "شارع شيري", locationEn: "Sherry St", type: "bestseller", board: "إقامة كاملة", boardEn: "All Inclusive", period: "1-31 أكتوبر", periodEn: "Oct 1-31", childPolicy: "الأول حتى 12، الثاني حتى 6", childPolicyEn: "1st to 12, 2nd to 6", features: ["صف أول","شاطئ","أكوا بارك"], featuresEn: ["Front Row","Beach","Aqua Park"], availMonths: ['2026-10'], images: [] },
+    { name: "ديزرت روز", nameEn: "Desert Rose", price: 19700, location: "طريق القرى", locationEn: "Villages Rd", type: "royal", board: "إقامة كاملة", boardEn: "All Inclusive", period: "1 يوليو - 31 أكتوبر", periodEn: "Jul 1 - Oct 31", childPolicy: "طفلان تحت 12 مجاناً", childPolicyEn: "2 children under 12 free", features: ["صف أول","شاطئ مميز"], featuresEn: ["Front Row","Premium Beach"], availMonths: ['2026-07','2026-08','2026-09','2026-10'], images: [] }
+],
+dahab: [
+    { name: "فندق جولدن بلازا", nameEn: "Golden Plaza Hotel", price: 3700, location: "المشربة", locationEn: "Mashraba", type: "economic", board: "إفطار فقط", boardEn: "Breakfast Only", period: "سبتمبر 2026", periodEn: "Sep 2026", childPolicy: "حسب سياسة الفندق", childPolicyEn: "Per policy", features: ["انتقالات","صف ثاني"], featuresEn: ["Transfers","2nd Row"], availMonths: ['2026-09'], images: [] },
+    { name: "فندق ريتاك كوناي", nameEn: "Retac Qunay Hotel", price: 9600, location: "دهب", locationEn: "Dahab", type: "royal", board: "فطار وعشاء", boardEn: "Half Board", period: "سبتمبر 2026", periodEn: "Sep 2026", childPolicy: "حسب سياسة الفندق", childPolicyEn: "Per policy", features: ["5 نجوم","صف أول","انتقالات"], featuresEn: ["5 Stars","Front Row","Transfers"], availMonths: ['2026-09'], images: [] },
+    { name: "فندق إيكوتيل دهب", nameEn: "Ecotel Dahab", price: 9000, location: "الثري بولز", locationEn: "Three Pools Rd", type: "featured", board: "فطار وعشاء", boardEn: "Half Board", period: "أكتوبر 2026", periodEn: "Oct 2026", childPolicy: "حسب سياسة الفندق", childPolicyEn: "Per policy", features: ["أكوا بارك","صف أول","انتقالات"], featuresEn: ["Aqua Park","Front Row","Transfers"], availMonths: ['2026-10'], images: [] }
+]};
+
+/* ============ RENDER CARDS ============ */
+const MONTH_NAMES_AR = ['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+const MONTH_NAMES_EN = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+function monthLabel(yyyymm) {
+    const parts = yyyymm.split('-');
+    const idx = parseInt(parts[1]) - 1;
+    return (currentLang === 'ar' ? MONTH_NAMES_AR[idx] : MONTH_NAMES_EN[idx]) + ' ' + parts[0].slice(2);
+}
+
+function renderCards(destKey, containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    container.innerHTML = '';
+    const list = hotelsData[destKey] || [];
+
+    list.forEach(function(hotel, index) {
+        const cardId = destKey + '-' + index;
+        const isFav = favorites.indexOf(hotel.name) > -1;
+        const name = currentLang === 'ar' ? hotel.name : hotel.nameEn;
+        const location = currentLang === 'ar' ? hotel.location : hotel.locationEn;
+        const board = currentLang === 'ar' ? hotel.board : hotel.boardEn;
+        const period = currentLang === 'ar' ? hotel.period : hotel.periodEn;
+        const childPolicy = currentLang === 'ar' ? hotel.childPolicy : hotel.childPolicyEn;
+        const features = currentLang === 'ar' ? hotel.features : hotel.featuresEn;
+
+        let imagesHtml = '', sliderBtns = '', counter = '';
+        if (hotel.images && hotel.images.length > 0) {
+            hotel.images.forEach(function(img, i) {
+                imagesHtml += '<img src="' + img + '" alt="' + name + '" class="slide-img ' + (i === 0 ? 'active' : '') + '" loading="lazy" decoding="async" onerror="this.style.display=\'none\'">';
+            });
+            if (hotel.images.length > 1) {
+                sliderBtns = '<button class="slider-btn prev-btn" onclick="changeSlide(\'' + cardId + '\',-1)"><i class="fa-solid fa-chevron-right"></i></button>' +
+                             '<button class="slider-btn next-btn" onclick="changeSlide(\'' + cardId + '\',1)"><i class="fa-solid fa-chevron-left"></i></button>';
+                counter = '<span class="img-counter">1/' + hotel.images.length + '</span>';
+            }
+        } else {
+            imagesHtml = '<div class="no-image"><i class="fa-solid fa-image"></i><span>' + t('images_soon') + '</span></div>';
+        }
+
+        const availMonths = hotel.availMonths || [];
+        const availChips = availMonths.slice(0, 4).map(function(m) {
+            return '<span class="avail-month" onclick="event.stopPropagation();openCalendar(\'' + hotel.name + '\')">' + monthLabel(m) + '</span>';
+        }).join('');
+
+        const card = document.createElement('div');
+        card.className = 'hotel-card';
+        card.dataset.name = hotel.name;
+        card.dataset.nameEn = hotel.nameEn;
+        card.dataset.price = hotel.price;
+        card.dataset.type = hotel.type;
+        card.dataset.location = hotel.location;
+        card.dataset.locationEn = hotel.locationEn;
+
+        card.innerHTML =
+            '<button class="fav-btn ' + (isFav ? 'active' : '') + '" onclick="toggleFav(this)"><i class="fa-' + (isFav ? 'solid' : 'regular') + ' fa-heart"></i></button>' +
+            '<span class="card-badge badge-' + hotel.type + '">' + t('badge_' + hotel.type) + '</span>' +
+            '<div class="card-slider" id="slider-' + cardId + '">' +
+                '<div class="img-skeleton"></div>' + imagesHtml + sliderBtns + counter +
+            '</div>' +
+            '<div class="card-body">' +
+                '<div class="hotel-location"><i class="fa-solid fa-location-dot"></i> ' + location + '</div>' +
+                '<h3 class="hotel-name">' + name + '</h3>' +
+                '<div class="hotel-features">' + features.map(function(f) { return '<span class="feature-tag">' + f + '</span>'; }).join('') + '</div>' +
+                '<ul class="hotel-details-list">' +
+                    '<li><i class="fa-solid fa-utensils"></i><span><strong>' + t('board_label') + '</strong> ' + board + '</span></li>' +
+                    '<li><i class="fa-solid fa-calendar-days"></i><span><strong>' + t('period_label') + '</strong> ' + period + '</span></li>' +
+                    '<li><i class="fa-solid fa-child"></i><span><strong>' + t('child_label') + '</strong> ' + childPolicy + '</span></li>' +
+                '</ul>' +
+                (availChips ? '<div class="avail-mini">' + availChips + '</div>' : '') +
+                '<div class="card-footer">' +
+                    '<div class="price-val">' + formatPrice(hotel.price) + '<span>' + t('per_person') + '</span></div>' +
+                    '<button class="btn-card-book" onclick="openBookingFromCard(this)"><i class="fa-solid fa-calendar-check"></i> ' + t('book_now') + '</button>' +
+                '</div>' +
+            '</div>';
+
+        container.appendChild(card);
+    });
+
+    filterCards();
+}
+
+/* ============ SLIDER ============ */
+function changeSlide(cardId, dir) {
+    const slider = document.getElementById('slider-' + cardId);
+    if (!slider) return;
+    const imgs = slider.querySelectorAll('.slide-img');
+    if (imgs.length < 2) return;
+    let idx = 0;
+    for (let i = 0; i < imgs.length; i++) {
+        if (imgs[i].classList.contains('active')) { idx = i; break; }
+    }
+    imgs[idx].classList.remove('active');
+    const next = (idx + dir + imgs.length) % imgs.length;
+    imgs[next].classList.add('active');
+    const counter = slider.querySelector('.img-counter');
+    if (counter) counter.textContent = (next + 1) + '/' + imgs.length;
+}
+
+/* Touch swipe */
+let swipeStart = 0, swipeTarget = null;
+document.addEventListener('touchstart', function(e) {
+    const s = e.target.closest('.card-slider');
+    if (s) { swipeTarget = s; swipeStart = e.changedTouches[0].screenX; }
+}, {passive: true});
+document.addEventListener('touchend', function(e) {
+    if (!swipeTarget) return;
+    const diff = swipeStart - e.changedTouches[0].screenX;
+    if (Math.abs(diff) > 50) {
+        const id = swipeTarget.id.replace('slider-', '');
+        changeSlide(id, diff > 0 ? 1 : -1);
+    }
+    swipeTarget = null;
+}, {passive: true});
+
+/* ============ TABS / FILTER ============ */
+function switchTab(tabName, btn) {
+    currentTab = tabName;
+    document.querySelectorAll('.tab-content').forEach(function(el) { el.style.display = 'none'; });
+    const target = document.getElementById(tabName + '-section');
+    if (target) target.style.display = 'block';
+    document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+    if (btn) btn.classList.add('active');
+    filterCards();
+}
+
+function setFilter(f, btn) {
+    currentFilter = f;
+    document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+    if (btn) btn.classList.add('active');
+    filterCards();
+}
+
+function filterCards() {
+    const input = document.getElementById('searchInput');
+    const q = input ? input.value.toLowerCase().trim() : '';
+    let visible = 0;
+    document.querySelectorAll('.hotel-card').forEach(function(card) {
+        const name = (card.dataset.name || '').toLowerCase();
+        const nameEn = (card.dataset.nameEn || '').toLowerCase();
+        const loc = (card.dataset.location || '').toLowerCase();
+        const locEn = (card.dataset.locationEn || '').toLowerCase();
+        const type = card.dataset.type || '';
+        const matchQ = !q || name.indexOf(q) > -1 || nameEn.indexOf(q) > -1 || loc.indexOf(q) > -1 || locEn.indexOf(q) > -1;
+        const matchF = currentFilter === 'all' || type === currentFilter;
+        const show = matchQ && matchF;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+    });
+    const grid = document.getElementById(currentTab + 'Grid');
+    if (!grid) return;
+    let noRes = grid.querySelector('.no-results');
+    if (visible === 0) {
+        if (!noRes) {
+            noRes = document.createElement('div');
+            noRes.className = 'no-results';
+            grid.appendChild(noRes);
+        }
+        noRes.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i>' + t('no_results');
+    } else if (noRes) {
+        noRes.remove();
+    }
+}
+
+/* ============ FAVORITES ============ */
+function toggleFav(btn) {
+    const card = btn.closest('.hotel-card');
+    const name = card.dataset.name;
+    const idx = favorites.indexOf(name);
+    if (idx > -1) {
+        favorites.splice(idx, 1);
+        btn.classList.remove('active');
+        btn.innerHTML = '<i class="fa-regular fa-heart"></i>';
+        showToast(t('toast_fav_remove'));
+    } else {
+        favorites.push(name);
+        btn.classList.add('active');
+        btn.innerHTML = '<i class="fa-solid fa-heart"></i>';
+        showToast(t('toast_fav_add'));
+    }
+    localStorage.setItem('safaroo_favorites', JSON.stringify(favorites));
+}
+
+/* ============ BOOKING WIZARD ============ */
+function openBookingFromCard(btn) {
+    const card = btn.closest('.hotel-card');
+    const hotelName = card.dataset.name;
+    const hotelEn = card.dataset.nameEn;
+    const price = parseInt(card.dataset.price) || 0;
+    openWizard(hotelName, hotelEn, price);
+}
+
+function openWizard(ar, en, price) {
+    wizardState = { hotel: ar, hotelEn: en, price: price, step: 1 };
+    const displayName = currentLang === 'ar' ? ar : en;
+    document.getElementById('wizardHotelName').textContent = displayName;
+    document.getElementById('wizardPrice').textContent = formatPrice(price) + ' / ' + t('per_person_word');
+    document.getElementById('wizName').value = '';
+    document.getElementById('wizPhone').value = '';
+    document.getElementById('wizRooms').value = 1;
+    document.getElementById('wizAdults').value = 2;
+    document.getElementById('wizChildren').value = 0;
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('wizCheckin').min = today;
+    document.getElementById('wizCheckout').min = today;
+    document.getElementById('wizCheckin').value = '';
+    document.getElementById('wizCheckout').value = '';
+    goToWizardStep(1);
+    document.getElementById('bookingModal').classList.add('show');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeBooking() {
+    document.getElementById('bookingModal').classList.remove('show');
+    document.body.style.overflow = '';
+}
+
+function goToWizardStep(step) {
+    wizardState.step = step;
+    document.querySelectorAll('.wizard-page').forEach(function(p) { p.classList.remove('active'); });
+    const target = document.querySelector('.wizard-page[data-page="' + step + '"]');
+    if (target) target.classList.add('active');
+
+    document.querySelectorAll('.wizard-step').forEach(function(el) {
+        const s = parseInt(el.dataset.step);
+        el.classList.toggle('active', s === step);
+        el.classList.toggle('completed', s < step);
+    });
+    document.querySelectorAll('.wizard-line').forEach(function(el, i) {
+        el.classList.toggle('completed', i + 1 < step);
+    });
+
+    if (step === 4) updateSummary();
+}
+
+function wizardNext(step) {
+    if (wizardState.step === 1 && step === 2) {
+        const ci = document.getElementById('wizCheckin').value;
+        const co = document.getElementById('wizCheckout').value;
+        if (!ci || !co) { showToast(t('toast_required')); return; }
+        if (new Date(co) <= new Date(ci)) { showToast(t('toast_date_error')); return; }
+    }
+    if (wizardState.step === 3 && step === 4) {
+        const n = document.getElementById('wizName').value.trim();
+        const p = document.getElementById('wizPhone').value.trim();
+        if (!n || !p) { showToast(t('toast_required')); return; }
+    }
+    goToWizardStep(step);
+}
+
+function adjustCounter(id, delta) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    let v = parseInt(el.value) || 0;
+    v = Math.max(parseInt(el.min) || 0, Math.min(parseInt(el.max) || 99, v + delta));
+    el.value = v;
+}
+
+function calcBooking() {
+    const ci = new Date(document.getElementById('wizCheckin').value);
+    const co = new Date(document.getElementById('wizCheckout').value);
+    const nights = Math.max(1, Math.ceil((co - ci) / (1000 * 60 * 60 * 24)));
+    const rooms = parseInt(document.getElementById('wizRooms').value) || 1;
+    const adults = parseInt(document.getElementById('wizAdults').value) || 1;
+    const children = parseInt(document.getElementById('wizChildren').value) || 0;
+    const total = wizardState.price * nights * adults;
+    return { nights: nights, rooms: rooms, adults: adults, children: children, total: total };
+}
+
+function updateSummary() {
+    const ci = document.getElementById('wizCheckin').value;
+    const co = document.getElementById('wizCheckout').value;
+    const name = document.getElementById('wizName').value;
+    const phone = document.getElementById('wizPhone').value;
+    const calc = calcBooking();
+    const displayName = currentLang === 'ar' ? wizardState.hotel : wizardState.hotelEn;
+
+    document.getElementById('wizardSummary').innerHTML =
+        '<div class="summary-box">' +
+            '<div class="summary-row"><strong>' + t('summary_hotel') + '</strong><span>' + displayName + '</span></div>' +
+            '<div class="summary-row"><strong>' + t('summary_price') + '</strong><span>' + formatPrice(wizardState.price) + '</span></div>' +
+            '<div class="summary-row"><strong>' + t('summary_dates') + '</strong><span>' + ci + ' → ' + co + '</span></div>' +
+            '<div class="summary-row"><strong>' + t('summary_nights') + '</strong><span>' + calc.nights + '</span></div>' +
+            '<div class="summary-row"><strong>' + t('summary_rooms') + '</strong><span>' + calc.rooms + '</span></div>' +
+            '<div class="summary-row"><strong>' + t('summary_guests') + '</strong><span>' + calc.adults + ' + ' + calc.children + '</span></div>' +
+            '<div class="summary-row"><strong>' + t('booking_name') + '</strong><span>' + name + '</span></div>' +
+            '<div class="summary-row"><strong>' + t('booking_phone') + '</strong><span>' + phone + '</span></div>' +
+        '</div>' +
+        '<div class="summary-total"><span>' + t('summary_total') + '</span><span>' + formatPrice(calc.total) + '</span></div>';
+}
+
+function submitWizard() {
+    const ci = document.getElementById('wizCheckin').value;
+    const co = document.getElementById('wizCheckout').value;
+    const name = document.getElementById('wizName').value.trim();
+    const phone = document.getElementById('wizPhone').value.trim();
+    if (!name || !phone || !ci || !co) { showToast(t('toast_required')); return; }
+    const calc = calcBooking();
+    const displayName = currentLang === 'ar' ? wizardState.hotel : wizardState.hotelEn;
+
+    const msg = t('whatsapp_msg_title') + '\n' +
+        t('whatsapp_hotel') + ' ' + displayName + '\n' +
+        t('whatsapp_price') + ' ' + formatPrice(wizardState.price) + '\n' +
+        t('whatsapp_name') + ' ' + name + '\n' +
+        t('whatsapp_phone') + ' ' + phone + '\n' +
+        t('whatsapp_checkin') + ' ' + ci + '\n' +
+        t('whatsapp_checkout') + ' ' + co + '\n' +
+        t('whatsapp_guests') + ' ' + calc.adults + ' + ' + calc.children + '\n' +
+        t('whatsapp_nights') + ' ' + calc.nights + ' ' + t('whatsapp_night') + '\n' +
+        t('whatsapp_total') + ' ' + formatPrice(calc.total);
+
+    window.open('https://wa.me/201050083130?text=' + encodeURIComponent(msg), '_blank');
+    closeBooking();
+}
+
+/* ============ CALENDAR ============ */
+function openCalendar(hotelName) {
+    let availMonths = [];
+    for (const dest in hotelsData) {
+        const h = hotelsData[dest].find(function(x) { return x.name === hotelName; });
+        if (h) {
+            availMonths = h.availMonths || [];
+            document.getElementById('calendarHotelName').textContent = currentLang === 'ar' ? h.name : h.nameEn;
+            break;
+        }
+    }
+    const monthsGrid = document.getElementById('calendarMonths');
+    monthsGrid.innerHTML = '';
+    const allMonths = ['2026-06','2026-07','2026-08','2026-09','2026-10','2026-11','2026-12','2027-01'];
+    allMonths.forEach(function(m) {
+        const isAvail = availMonths.indexOf(m) > -1;
+        const div = document.createElement('div');
+        div.className = 'calendar-month ' + (isAvail ? 'available' : '');
+        div.textContent = monthLabel(m);
+        if (isAvail) {
+            div.onclick = function() { closeCalendar(); openWizard(hotelName, findEn(hotelName), findPrice(hotelName)); };
+        }
+        monthsGrid.appendChild(div);
+    });
+    document.getElementById('calendarModal').classList.add('show');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCalendar() {
+    document.getElementById('calendarModal').classList.remove('show');
+    document.body.style.overflow = '';
+}
+
+function findEn(ar) {
+    for (const d in hotelsData) {
+        const h = hotelsData[d].find(function(x) { return x.name === ar; });
+        if (h) return h.nameEn;
+    }
+    return ar;
+}
+function findPrice(ar) {
+    for (const d in hotelsData) {
+        const h = hotelsData[d].find(function(x) { return x.name === ar; });
+        if (h) return h.price;
+    }
+    return 0;
+}
+
+/* ============ CHATBOT ============ */
+let chatOpen = false;
+let chatInitialized = false;
+
+function toggleChatbot() {
+    chatOpen = !chatOpen;
+    document.getElementById('chatbotWindow').classList.toggle('open', chatOpen);
+    if (chatOpen && !chatInitialized) {
+        chatInitialized = true;
+        addChatMsg(t('chatbot_welcome'), 'bot');
+        setTimeout(function() {
+            addChatMsg('اختار من الأسئلة دي أو اكتب سؤالك:', 'bot', [
+                { text: '💰 الأسعار', q: 'أسعار' },
+                { text: '🏨 حجز', q: 'حجز' },
+                { text: '🚌 مواصلات', q: 'مواصلات' },
+                { text: '🏝️ رحلة دهب', q: 'دهب' },
+                { text: '📞 تواصل', q: 'تواصل' }
+            ]);
+        }, 400);
+    }
+}
+
+function addChatMsg(text, sender, quickReplies) {
+    const container = document.getElementById('chatbotMessages');
+    const msg = document.createElement('div');
+    msg.className = 'chat-msg ' + sender;
+    msg.innerHTML = text;
+    if (quickReplies) {
+        const qr = document.createElement('div');
+        qr.className = 'chat-quick-replies';
+        quickReplies.forEach(function(r) {
+            const btn = document.createElement('button');
+            btn.className = 'quick-reply';
+            btn.textContent = r.text;
+            btn.onclick = function() { sendQuick(r.q); };
+            qr.appendChild(btn);
+        });
+        msg.appendChild(qr);
+    }
+    container.appendChild(msg);
+    container.scrollTop = container.scrollHeight;
+}
+
+function sendChatMessage() {
+    const input = document.getElementById('chatbotInput');
+    const text = input.value.trim();
+    if (!text) return;
+    input.value = '';
+    sendQuick(text);
+}
+
+function sendQuick(text) {
+    addChatMsg(text, 'user');
+    showTyping();
+    setTimeout(function() {
+        removeTyping();
+        addChatMsg(getBotReply(text), 'bot');
+    }, 800);
+}
+
+function showTyping() {
+    const container = document.getElementById('chatbotMessages');
+    const t = document.createElement('div');
+    t.className = 'typing-indicator';
+    t.id = 'typingIndicator';
+    t.innerHTML = '<span></span><span></span><span></span>';
+    container.appendChild(t);
+    container.scrollTop = container.scrollHeight;
+}
+
+function removeTyping() {
+    const t = document.getElementById('typingIndicator');
+    if (t) t.remove();
+}
+
+function getBotReply(msg) {
+    const m = msg.toLowerCase();
+    if (m.indexOf('سعر') > -1 || m.indexOf('أسعار') > -1 || m.indexOf('price') > -1) {
+        return '💰 الأسعار تبدأ من ' + formatPrice(2100) + ' للفرد في شرم، و' + formatPrice(3700) + ' في دهب.<br>شوف قسم الفنادق للتفاصيل الكاملة!';
+    }
+    if (m.indexOf('حجز') > -1 || m.indexOf('book') > -1) {
+        return '📅 للحجز اضغط "احجز الآن" على أي فندق، أو كلمنا على <a href="https://wa.me/201050083130" target="_blank">واتساب</a>';
+    }
+    if (m.indexOf('مواصلات') > -1 || m.indexOf('نقل') > -1 || m.indexOf('باص') > -1) {
+        return '🚌 عندنا خدمة نقل يومي: المنصورة ← شرم ' + formatPrice(675) + ' | القاهرة ← شرم ' + formatPrice(650) + '<br>شوف جدول النقل في الموقع.';
+    }
+    if (m.indexOf('دهب') > -1 || m.indexOf('dahab') > -1) {
+        return '🏝️ رحلة دهب وسانت كاترين: ' + formatPrice(950) + ' للفرد من القاهرة والمنصورة.<br>يومان بدون مبيت + شروق + سنوركلينج!';
+    }
+    if (m.indexOf('تواصل') > -1 || m.indexOf('اتصال') > -1 || m.indexOf('contact') > -1 || m.indexOf('رقم') > -1) {
+        return '📞 كلمنا على: <a href="tel:01050083130">01050083130</a><br>أو <a href="https://wa.me/201050083130" target="_blank">واتساب</a> — متاحين 24 ساعة!';
+    }
+    if (m.indexOf('سلام') > -1 || m.indexOf('أهلا') > -1 || m.indexOf('hi') > -1 || m.indexOf('hello') > -1) {
+        return 'أهلاً بيك 👋 اختار من الأسئلة أو اسألني عن أي حاجة!';
+    }
+    if (m.indexOf('شكرا') > -1 || m.indexOf('thanks') > -1) {
+        return 'العفو 💙 نورتنا! أي استفسار تاني متترددش.';
+    }
+    return 'ممكن أساعدك في: الأسعار 💰 | الحجز 📅 | المواصلات 🚌 | رحلة دهب 🏝️<br>أو كلمنا على <a href="https://wa.me/201050083130" target="_blank">واتساب</a> مباشرة.';
+}
+
+/* ============ TOAST ============ */
+let toastTimer;
+function showToast(msg) {
+    const toast = document.getElementById('toast');
+    document.getElementById('toastMsg').textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function() { toast.classList.remove('show'); }, 2500);
+}
+
+/* ============ THEME ============ */
+function toggleTheme() {
+    const html = document.documentElement;
+    const isDark = html.getAttribute('data-theme') === 'dark';
+    html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+    document.getElementById('theme-icon').className = isDark ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+    document.getElementById('theme-text').textContent = isDark ? t('theme_dark') : t('theme_light');
+    localStorage.setItem('safaroo_theme', isDark ? 'light' : 'dark');
+}
+
+/* ============ LANGUAGE ============ */
+function toggleLanguage() {
+    currentLang = currentLang === 'ar' ? 'en' : 'ar';
+    document.documentElement.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
+    document.documentElement.setAttribute('lang', currentLang);
+    document.getElementById('lang-text').textContent = currentLang === 'ar' ? 'English' : 'العربية';
+
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        const k = el.getAttribute('data-i18n');
+        if (translations[currentLang][k]) el.innerHTML = translations[currentLang][k];
+    });
+
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    document.getElementById('theme-text').textContent = isDark ? t('theme_light') : t('theme_dark');
+
+    renderCards('sharm', 'sharmGrid');
+    renderCards('hurghada', 'hurghadaGrid');
+    renderCards('dahab', 'dahabGrid');
+    updateAllPrices();
+
+    localStorage.setItem('safaroo_lang', currentLang);
+}
+
+/* ============ WEATHER ============ */
+function weatherIcon(code) {
+    if (code === 0) return '☀️';
+    if (code <= 3) return '🌤️';
+    if (code <= 48) return '🌫️';
+    if (code <= 67) return '🌧️';
+    if (code <= 77) return '❄️';
+    if (code <= 82) return '🌦️';
+    return '⛈️';
+}
+function weatherDesc(code) {
+    if (code === 0) return currentLang === 'ar' ? 'صافي' : 'Clear';
+    if (code <= 3) return currentLang === 'ar' ? 'غائم جزئياً' : 'Partly Cloudy';
+    if (code <= 48) return currentLang === 'ar' ? 'ضباب' : 'Foggy';
+    if (code <= 67) return currentLang === 'ar' ? 'ممطر' : 'Rainy';
+    if (code <= 77) return currentLang === 'ar' ? 'ثلج' : 'Snow';
+    if (code <= 82) return currentLang === 'ar' ? 'زخات مطر' : 'Showers';
+    return currentLang === 'ar' ? 'عاصفة' : 'Storm';
+}
+async function loadWeather() {
+    const cards = document.querySelectorAll('.weather-card');
+    for (const card of cards) {
+        const lat = card.dataset.lat;
+        const lon = card.dataset.lon;
+        try {
+            const res = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + lat + '&longitude=' + lon + '&current=temperature_2m,weather_code&timezone=auto');
+            const data = await res.json();
+            const temp = Math.round(data.current.temperature_2m);
+            const code = data.current.weather_code;
+            card.querySelector('.weather-icon').textContent = weatherIcon(code);
+            card.querySelector('.weather-temp').textContent = temp + '°';
+            card.querySelector('.weather-desc').textContent = weatherDesc(code);
+        } catch (e) {
+            card.querySelector('.weather-icon').textContent = '🌡️';
+            card.querySelector('.weather-temp').textContent = '--°';
+            card.querySelector('.weather-desc').textContent = currentLang === 'ar' ? 'غير متاح' : 'N/A';
+        }
+    }
+}
+
+/* ============ SOCIAL PROOF ============ */
+const socialNames = ['أحمد من القاهرة', 'سارة من الإسكندرية', 'محمد من المنصورة', 'نور من الجيزة', 'ياسمين من طنطا', 'كريم من بورسعيد', 'هبة من الأقصر'];
+const socialHotels = ['فندق أوشن كلوب', 'فندق سيتي شرم', 'فندق أمواج عيون', 'فندق رويال نعمة', 'دبل تري هيلتون'];
+const socialTimes = ['قبل 3 دقائق', 'قبل 7 دقائق', 'قبل 12 دقيقة', 'قبل 18 دقيقة', 'قبل 25 دقيقة'];
+
+function showSocialProof() {
+    const name = socialNames[Math.floor(Math.random() * socialNames.length)];
+    const hotel = socialHotels[Math.floor(Math.random() * socialHotels.length)];
+    const time = socialTimes[Math.floor(Math.random() * socialTimes.length)];
+    const el = document.getElementById('socialProof');
+    document.getElementById('socialProofText').innerHTML = '🎉 <strong>' + name + '</strong> حجز <strong>' + hotel + '</strong><br><span style="color:var(--text-muted);font-size:.78rem">' + time + '</span>';
+    el.classList.add('show');
+    setTimeout(function() { el.classList.remove('show'); }, 5500);
+}
+
+function scheduleSocialProof() {
+    setTimeout(function() {
+        showSocialProof();
+        scheduleSocialProof();
+    }, 12000 + Math.random() * 18000);
+}
+
+/* ============ PWA ============ */
+function setupPWA() {
+    const manifest = {
+        name: 'Safaroo Travel',
+        short_name: 'Safaroo',
+        start_url: '.',
+        display: 'standalone',
+        background_color: '#0077b6',
+        theme_color: '#0077b6',
+        description: 'Safaroo Travel - Hotel Bookings',
+        icons: [
+            { src: 'https://cdn.imagetourls.com/uploads/tyImg/Py6Ksy2K.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+            { src: 'https://cdn.imagetourls.com/uploads/tyImg/Py6Ksy2K.png', sizes: '512x512', type: 'image/png', purpose: 'any' }
+        ]
+    };
+    try {
+        const manifestBlob = new Blob([JSON.stringify(manifest)], { type: 'application/json' });
+        document.getElementById('manifestLink').href = URL.createObjectURL(manifestBlob);
+    } catch (e) {}
+    if ('serviceWorker' in navigator) {
+        try {
+            const swCode = "self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));self.addEventListener('fetch',e=>{});";
+            const swBlob = new Blob([swCode], { type: 'application/javascript' });
+            navigator.serviceWorker.register(URL.createObjectURL(swBlob)).catch(function() {});
+        } catch (e) {}
+    }
+}
+
+window.addEventListener('beforeinstallprompt', function(e) {
+    e.preventDefault();
+    deferredPrompt = e;
+    document.getElementById('installPwaBtn').style.display = 'flex';
+});
+
+function installPwa() {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(function(choice) {
+        if (choice.outcome === 'accepted') {
+            document.getElementById('installPwaBtn').style.display = 'none';
+        }
+        deferredPrompt = null;
+    });
+}
+
+/* ============ SCROLL ============ */
+window.addEventListener('scroll', function() {
+    const h = document.documentElement;
+    const max = h.scrollHeight - h.clientHeight;
+    const pct = max > 0 ? (h.scrollTop / max) * 100 : 0;
+    document.getElementById('scrollProgress').style.width = pct + '%';
+    document.getElementById('backToTop').classList.toggle('show', h.scrollTop > 500);
+});
+
+/* ============ REVEAL ============ */
+const revealObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(en) { if (en.isIntersecting) en.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+
+/* ============ INIT ============ */
+document.addEventListener('DOMContentLoaded', function() {
+    // Restore theme
+    const savedTheme = localStorage.getItem('safaroo_theme');
+    if (savedTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.getElementById('theme-icon').className = 'fa-solid fa-sun';
+    }
+    const savedLang = localStorage.getItem('safaroo_lang');
+    if (savedLang === 'en') {
+        setTimeout(function() { toggleLanguage(); }, 150);
+    }
+
+    // Splash
+    setTimeout(function() {
+        document.getElementById('splash-screen').classList.add('fade-out');
+    }, 2800);
+
+    // Render
+    renderCards('sharm', 'sharmGrid');
+    renderCards('hurghada', 'hurghadaGrid');
+    renderCards('dahab', 'dahabGrid');
+
+    // Update table prices with fixed rate
+    updateAllPrices();
+
+    // Reveal
+    document.querySelectorAll('.reveal').forEach(function(el) { revealObs.observe(el); });
+
+    // Weather
+    loadWeather();
+
+    // PWA
+    setupPWA();
+
+    // Social proof
+    setTimeout(scheduleSocialProof, 8000);
+
+    // ESC closes modals
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') { closeBooking(); closeCalendar(); }
+    });
+
+    // Mobile menu
+    document.querySelectorAll('.nav-links a').forEach(function(a) {
+        a.addEventListener('click', function() { document.querySelector('.nav-links').classList.remove('open'); });
+    });
+});
+</script>
+</body>
+</html>
